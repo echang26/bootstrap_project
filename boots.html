@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vacay Forte</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="mybrand" href="http://www.vacayforte.com">Vacay Forte</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navBar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://www.vacayforte.com"><span class="glyphicon glyphicon-home large"> Home<span class="sr-only">(current)</span></span></a></li>
+        <li><a href="#topContainer">The Gist</a></li>        
+        <li><a href="#about">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Popular Destinations <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">London</a></li>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Your Underpants</a></li>
+            <li class="divider"></li>
+            <li><a href="#">More places</a></li>
+          </ul>
+        </li> <!--end of dropdown -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>      
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="container highlight">
+        <h1>We'll plan your vacation.</h1>      
+        <p>Relax. We got this.</p>
+        <a class="ghost-button" href="#topContainer">LEARN HOW</a><div class="space"></div>
+        <a class="ghost-button" href="#signup">SIGN ME UP</a>
+      </div>
+    </div>
+  </div>
+
+
+         
+  <div class="container" id="topContainer">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+          <h1 class="centered">Wish you could go on vacay...without planning a thing?<h1>
+            <p class="lead">Now you can.<br>Leave the nitty gritty details to us.<br><b>Vacay</b> is our <b>forte.</b></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="secondContainer">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1 class="centered">Why Vacay Forte?<h1>
+            <p class="lead">We've all been there. You and some friends want to take a ski trip, but no one wants to plan the darn thing...so you end up taking the reins. Vacay Forte was created to allay your frustrations.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="bottomContainer">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1 class="centered">The ball's in your court.<h1>
+            <p class="lead">What are you waiting for?<br>Sign up to get in touch with our vacay experts for free!</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+/*  $("h1").click(function() {
+      $(this).css("color", "red");
+    });
+*/
+
+  function getSelectedText() {
+    var text = "";
+    if (window.getSelection) {
+      text = window.getSelection().toString();
+    } else if (document.selection && document.selection.type != "Control") {
+      text = document.selection.createRange().text;
+    }
+    return text;
+  }
+  function alertSelectedText() {
+    var selectedText = getSelectedText();
+    if (selectedText) {
+      alert("You highlighted " + selectedText);
+    }
+  }
+
+  document.onmouseup = alertSelectedText; //activate when mouse action occurs
+  document.onkeyup = alertSelectedText; //activate when key action occurs
+
+  </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
